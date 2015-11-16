@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#99D6D6"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView android:id="@+id/elv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+
+        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+        android:ellipsize="marquee"/>
+
+    <RatingBar android:id="@+id/elv_rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        style="?android:attr/ratingBarStyle"
+        android:focusable="false"
+        android:rating="0"
+        android:stepSize="1"
+        android:numStars="5"/>
+
+</LinearLayout>
